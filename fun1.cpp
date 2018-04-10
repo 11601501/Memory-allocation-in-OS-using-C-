@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include<conio.h>
  
 int current[5][5], maximum_claim[5][5], available[5];
 int allocation[5] = {0, 0, 0, 0, 0};
 int maxres[5], running[5], safe = 0;
 int counter = 0, i, j, exec, resources, processes, k = 1;
-
+ 
 int main()
 {
     printf("\nEnter number of processes: ");
@@ -20,7 +19,7 @@ int main()
         printf("\nEnter number of resources: ");
         scanf("%d", &resources);
  
-        printf("\nEnter Claim Vector:");
+        printf("\nEnter The maximum resourse:");
         for (i = 0; i < resources; i++) 
     { 
             scanf("%d", &maxres[i]);
@@ -35,7 +34,7 @@ int main()
             }
         }
  
-        printf("\nEnter Maximum Claim Table:\n");
+        printf("\nEnter Maximum  Table:\n");
         for (i = 0; i < processes; i++) 
     {
             for(j = 0; j < resources; j++) 
@@ -44,7 +43,7 @@ int main()
             }
         }
  
-    printf("\nThe Claim Vector is: ");
+    printf("\nThe Total No. of resourse is: ");
         for (i = 0; i < resources; i++) 
     {
             printf("\t%d", maxres[i]);
@@ -60,7 +59,7 @@ int main()
         printf("\n");
         }
  
-        printf("\nThe Maximum Claim Table:\n");
+        printf("\nThe Maximum Table:\n");
         for (i = 0; i < processes; i++) 
     {
             for (j = 0; j < resources; j++) 
@@ -135,7 +134,7 @@ int main()
         else 
         {
                     printf("\nThe process is in safe state");
-                    printf("\nAvailable vector:");
+                    printf("\nAvailable :");
  
                     for (i = 0; i < resources; i++) 
             {
